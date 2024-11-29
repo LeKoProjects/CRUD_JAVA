@@ -17,7 +17,7 @@ public class Revista extends ItemBiblioteca {
     }
 
     @Override
-    public void exibirDetalhes() {
-        System.out.println("Revista: " + getTitulo() + " | Edição: " + edicao);
+    public String exibirDetalhes() {
+        return "Revista: " + getTitulo() + " | Edição: " + edicao;
     }
 }

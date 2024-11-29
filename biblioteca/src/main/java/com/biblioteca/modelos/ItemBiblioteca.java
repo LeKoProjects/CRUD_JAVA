@@ -15,5 +15,5 @@ public abstract class ItemBiblioteca {
         this.titulo = titulo;
     }
 
-    public abstract void exibirDetalhes();
+    public abstract String exibirDetalhes();
 }

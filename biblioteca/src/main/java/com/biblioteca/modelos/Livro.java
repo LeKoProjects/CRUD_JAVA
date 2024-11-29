@@ -17,7 +17,7 @@ public class Livro extends ItemBiblioteca {
     }
 
     @Override
-    public void exibirDetalhes() {
-        System.out.println("Livro: " + getTitulo() + " | Autor: " + autor);
+    public String exibirDetalhes() {
+        return "Livro: " + getTitulo() + " | Autor: " + autor;
     }
 }

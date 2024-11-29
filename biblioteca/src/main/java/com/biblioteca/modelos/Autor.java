@@ -17,8 +17,7 @@ public class Autor extends Pessoa {
     }
 
     @Override
-    public void exibirInformacoes() {
-        super.exibirInformacoes();
-        System.out.println("Data de Nascimento: " + dataNascimento);
+    public String exibirInformacoes() {
+        return super.exibirInformacoes() + ", Data de Nascimento: " + dataNascimento;
     }
 }

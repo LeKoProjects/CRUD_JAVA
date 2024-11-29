@@ -1,27 +1,23 @@
 package com.biblioteca.modelos;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Usuario extends Pessoa {
-    private List<String> historicoEmprestimos;
+    private String historicoEmprestimos;
 
     public Usuario(String nome, String endereco) {
         super(nome, endereco);
-        this.historicoEmprestimos = new ArrayList<>();
+        this.historicoEmprestimos = "";
     }
 
-    public List<String> getHistoricoEmprestimos() {
+    public String getHistoricoEmprestimos() {
         return historicoEmprestimos;
     }
 
     public void adicionarEmprestimo(String titulo) {
-        historicoEmprestimos.add(titulo);
+        historicoEmprestimos += titulo + "; ";
     }
 
     @Override
-    public void exibirInformacoes() {
-        super.exibirInformacoes();
-        System.out.println("Histórico de Empréstimos: " + historicoEmprestimos);
+    public String exibirInformacoes() {
+        return super.exibirInformacoes() + ", Histórico de Empréstimos: " + historicoEmprestimos;
     }
 }

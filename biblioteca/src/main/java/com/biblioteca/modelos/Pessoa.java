@@ -25,8 +25,7 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
-    public void exibirInformacoes() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Endereço: " + endereco);
+    public String exibirInformacoes() {
+        return "Nome: " + nome + ", Endereço: " + endereco;
     }
 }
